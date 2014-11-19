@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project avmon-server with libraries in sub-folder">
+	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
+	<!--ANT 1.7 is required                                        -->
+	<target name="create_run_jar">
+		<jar destfile="alert-count.jar">
+			<manifest>
+				<attribute name="Main-Class" value="alertcount.Generater" />
+				<attribute name="Class-Path" value="template.xls conf.properties . lib/aopalliance.jar  lib/avmon-perfm-data.jar lib/commons-dbcp-1.2.1.jar lib/commons-lang3-3.1.jar lib/commons-logging-1.1.1.jar lib/commons-pool-1.3.jar lib/ehcache-core-2.6.6.jar lib/jxl.jar lib/log4j-1.2.14.jar  lib/ojdbc6.jar lib/postgresql.jar     lib/slf4j-api-1.5.8.jar lib/slf4j-log4j12-1.5.8.jar  lib/spring-aop-3.2.2.jar lib/spring-beans-3.2.2.jar  lib/spring-context-3.2.2-sources.jar lib/spring-context-3.2.2.jar   lib/spring-core-3.2.2.jar lib/spring-expression-3.2.2.jar  lib/spring-jdbc-3.2.2.jar lib/spring-tx-3.2.2.jar" />
+			</manifest>
+			<fileset dir="D:\WorkSpace\shanxibov\alert-conut\bin">
+				<exclude name="log4j.properties" />
+				<exclude name="conf.properties" />
+				<exclude name="template.xls" />
+			</fileset>
+			<!-- <fileset dir="Avmon/workspace/avmon-api/bin"/>
+        	<fileset dir="Avmon/workspace/avmon.notify.uip.package/bin"/>
+        	-->
+		</jar>
+
+
+
+
+	</target>
+</project>
